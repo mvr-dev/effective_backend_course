@@ -1,7 +1,7 @@
-package com.example.rest.evolution;
+package com.example.rest.employees.evolution;
 
-import com.example.rest.Employee;
-import com.example.rest.EmployeeController;
+import com.example.rest.employees.Employee;
+import com.example.rest.employees.EmployeeController;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.example.rest;
+package com.example.rest.employees;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

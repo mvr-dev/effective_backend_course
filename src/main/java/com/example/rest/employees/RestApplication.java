@@ -1,6 +1,5 @@
-package com.example.rest;
+package com.example.rest.employees;
 
-import com.example.rest.evolution.EmployeeModelAssembler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
