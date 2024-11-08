@@ -14,11 +14,13 @@ public class OrderModelAssembler implements RepresentationModelAssembler<Order,E
     @Override
     public EntityModel<Order> toModel(Order order) {
         EntityModel<Order> orderEntityModel = EntityModel.of(order,
-                linkTo(methodOn(EmployeeController.class).one(order.getId())).withSelfRel(),
-                linkTo(methodOn(EmployeeController.class).all()).withRel("order"));
+                linkTo(methodOn(OrderController.class).one(order.getId())).withSelfRel(),
+                linkTo(methodOn(OrderController.class).all()).withRel("order"));
         if (order.getStatus() == Status.IN_PROGRESS){
-            orderEntityModel.add(linkTo(methodOn(OrderController.class).cancel()))
+            orderEntityModel.add(linkTo(methodOn(OrderController.class).cancel(order.getId())).withRel("cancel"));
+            orderEntityModel.add(linkTo(methodOn(OrderController.class).complete(order.getId())).withRel("complete"));
         }
+        return orderEntityModel;
     }
 
 }

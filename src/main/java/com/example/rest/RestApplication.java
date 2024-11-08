@@ -1,4 +1,4 @@
-package com.example.rest.employees;
+package com.example.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
