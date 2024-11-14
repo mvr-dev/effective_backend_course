@@ -54,9 +54,11 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>dev.effective</groupId>
-			<artifactId>lab2</artifactId>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>6.1.12</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
