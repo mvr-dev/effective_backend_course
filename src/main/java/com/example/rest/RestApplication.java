@@ -13,7 +13,7 @@ import java.util.concurrent.Executor;
 public class RestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApplication.class, args);
+		SpringApplication.run(RestApplication.class, args).close();
 	}
 
 	@Bean

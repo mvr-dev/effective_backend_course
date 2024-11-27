@@ -23,6 +23,7 @@ public class GithubLookupService {
         logger.info("Looking up "+user);
         String url = String.format("https://api.github.com/users/%s", user);
         User result = restTemplate.getForObject(url,User.class);
+        Thread.sleep(1000L);
         return CompletableFuture.completedFuture(result);
     }
 }
